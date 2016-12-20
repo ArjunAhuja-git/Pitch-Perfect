@@ -8,20 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		DC23F4701DF56D00005DA730 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC23F46F1DF56D00005DA730 /* AppDelegate.swift */; };
-		DC23F4721DF56D00005DA730 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC23F4711DF56D00005DA730 /* ViewController.swift */; };
-		DC23F4751DF56D00005DA730 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC23F4731DF56D00005DA730 /* Main.storyboard */; };
+		DC23F4721DF56D00005DA730 /* RecordSoundsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC23F4711DF56D00005DA730 /* RecordSoundsViewController.swift */; };
 		DC23F4771DF56D00005DA730 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC23F4761DF56D00005DA730 /* Assets.xcassets */; };
 		DC23F47A1DF56D00005DA730 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC23F4781DF56D00005DA730 /* LaunchScreen.storyboard */; };
+		DC501FEC1E010A4800A5FB1A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC501FEA1E010A4800A5FB1A /* Main.storyboard */; };
+		DC501FEE1E010F3A00A5FB1A /* playSoundsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC501FED1E010F3A00A5FB1A /* playSoundsViewController.swift */; };
+		DC92C1B21E091869000672D2 /* playsoundsviewcontroller-audio.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC92C1B11E091869000672D2 /* playsoundsviewcontroller-audio.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		DC23F46C1DF56D00005DA730 /* tryAgain.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tryAgain.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC23F46F1DF56D00005DA730 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		DC23F4711DF56D00005DA730 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		DC23F4741DF56D00005DA730 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DC23F4711DF56D00005DA730 /* RecordSoundsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordSoundsViewController.swift; sourceTree = "<group>"; };
 		DC23F4761DF56D00005DA730 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DC23F4791DF56D00005DA730 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DC23F47B1DF56D00005DA730 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DC501FEB1E010A4800A5FB1A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DC501FED1E010F3A00A5FB1A /* playSoundsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = playSoundsViewController.swift; sourceTree = "<group>"; };
+		DC92C1B11E091869000672D2 /* playsoundsviewcontroller-audio.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "playsoundsviewcontroller-audio.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,11 +59,13 @@
 			isa = PBXGroup;
 			children = (
 				DC23F46F1DF56D00005DA730 /* AppDelegate.swift */,
-				DC23F4711DF56D00005DA730 /* ViewController.swift */,
-				DC23F4731DF56D00005DA730 /* Main.storyboard */,
+				DC23F4711DF56D00005DA730 /* RecordSoundsViewController.swift */,
+				DC501FEA1E010A4800A5FB1A /* Main.storyboard */,
 				DC23F4761DF56D00005DA730 /* Assets.xcassets */,
 				DC23F4781DF56D00005DA730 /* LaunchScreen.storyboard */,
 				DC23F47B1DF56D00005DA730 /* Info.plist */,
+				DC501FED1E010F3A00A5FB1A /* playSoundsViewController.swift */,
+				DC92C1B11E091869000672D2 /* playsoundsviewcontroller-audio.swift */,
 			);
 			path = tryAgain;
 			sourceTree = "<group>";
@@ -123,9 +129,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DC501FEC1E010A4800A5FB1A /* Main.storyboard in Resources */,
 				DC23F47A1DF56D00005DA730 /* LaunchScreen.storyboard in Resources */,
 				DC23F4771DF56D00005DA730 /* Assets.xcassets in Resources */,
-				DC23F4751DF56D00005DA730 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -136,28 +142,30 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DC23F4721DF56D00005DA730 /* ViewController.swift in Sources */,
+				DC501FEE1E010F3A00A5FB1A /* playSoundsViewController.swift in Sources */,
+				DC23F4721DF56D00005DA730 /* RecordSoundsViewController.swift in Sources */,
 				DC23F4701DF56D00005DA730 /* AppDelegate.swift in Sources */,
+				DC92C1B21E091869000672D2 /* playsoundsviewcontroller-audio.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		DC23F4731DF56D00005DA730 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				DC23F4741DF56D00005DA730 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		DC23F4781DF56D00005DA730 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				DC23F4791DF56D00005DA730 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		DC501FEA1E010A4800A5FB1A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DC501FEB1E010A4800A5FB1A /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -299,6 +307,7 @@
 				DC23F4801DF56D00005DA730 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
